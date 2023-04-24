@@ -1,0 +1,80 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+/* common */
+* {font-family: 'Spoqa Han Sans Neo', 'Spoqa Han Sans JP', sans-serif; letter-spacing: -0.035em;}
+a{text-decoration: none; color: #000;}
+html{font-size: 0.75vw}
+
+/* container */
+/* spot */
+.spot>.spot_inner{text-align: center;position: relative;}
+.spot>.spot_inner>h3{font-size: 4.57rem;font-weight: 700;padding: 6% 0;}
+.path{display:block; position:absolute; top: 0.3rem;}
+.path em{cursor: pointer;margin: 0 0.3rem;}
+.path em:first-of-type{display:inline-block; width: 1rem;height: 1rem;text-indent: -9999px;overflow: hidden; cursor: pointer; background: url(../images/home.png) no-repeat center ;}
+
+.spot_inner>a{position:absolute;display:flex;align-items: center;bottom: 10%;right: 10%;;font-size: 1.07rem;line-height: 1.07rem;border:1px solid #e5e5e5;border-radius: 8px;padding: 1rem 3rem 1rem 1rem; background: url(../images/download.svg) no-repeat 90% 50%;}
+/* content */
+/* table */
+.content>table{width: 100%;border-top: 2px solid black;font-size: 1.28rem;}
+.content>table>thead{font-size: 1.28rem;font-weight: 700;text-align-last: left;}
+.content>table>thead>tr>th{padding: 1.66rem 2rem;font-weight: 700;border-bottom: 1px solid #e5e5e5;}
+.content>table>thead>tr>.num{width: 8%; }
+.content>table>thead>tr>.tit{width: 62%;}
+.content>table>thead>tr>.wri{width: 15%;}
+.content>table>thead>tr>.dat{width: 15%;}
+
+.content>table>tbody td{padding: 1.66rem 2rem; border-bottom: 1px solid #e5e5e5;}
+.content>table>tbody td:nth-of-type(1){text-align: center;}
+
+/* pagination */
+.pagination_inner{display:flex; align-items: center;justify-content: center;margin: 5% 10%;}
+.pagination_inner>a{display:block; width: 2.5rem;height: 3rem; text-indent: -9999px;overflow: hidden;padding: 0 0.5rem}
+.pagination_inner>a:nth-of-type(1){background: url(../images/arw_paging_to_first.svg) 50% 50% no-repeat;}
+.pagination_inner>a:nth-of-type(1):hover{background: url(../images/arw_paging_to_first_hov.svg) 50% 50% no-repeat; transform: rotate(180deg)}
+.pagination_inner>a:nth-of-type(2){background: url(../images/arw_paging_to_prev.svg) 50% 50% no-repeat;}
+.pagination_inner>a:nth-of-type(2):hover{background: url(../images/arw_paging_to_prev_hov.svg) 50% 50% no-repeat; transform: rotate(180deg)}
+.pagination_inner>a:nth-of-type(3){background: url(../images/arw_paging_to_prev.svg) 50% 50% no-repeat;transform: rotate(180deg)}
+.pagination_inner>a:nth-of-type(3):hover{background: url(../images/arw_paging_to_prev_hov.svg) 50% 50% no-repeat; transform: rotate(0deg)}  
+.pagination_inner>a:nth-of-type(4){background: url(../images/arw_paging_to_first.svg) 50% 50% no-repeat;transform: rotate(180deg)}
+.pagination_inner>a:nth-of-type(4):hover{background: url(../images/arw_paging_to_first_hov.svg) 50% 50% no-repeat; transform: rotate(0deg)}
+.pagination_inner>ol{display:flex;padding: 3rem;}
+.pagination_inner>ol>li{display:flex;}
+.pagination_inner>ol>li>a{display:block; padding:0 1rem;font-size: 1.71rem;}
+
+.pagination_inner>ol>li.on>a{font-weight: bold;color: #1428a0;}
+
+/* .link */
+.link{margin:5% 10%;}
+.link_inner{display:flex;align-items: center;justify-content: space-between;}
+.link_inner>a{display:block;width: 20%; padding: 3rem 4rem; margin: 1rem;border:1px solid #e5e5e5; border-radius:8px; font-size: 1.28rem;color: #222;font-weight: 700;}
+.link_inner>a:hover{border:1px solid #1428a0}
+.link_inner>a:last-of-type{margin-right: 0;}
+
+.link_inner>a:nth-of-type(1){background: url(../images/linkbtm_01.svg) 90% 50% no-repeat; }
+.link_inner>a:nth-of-type(2){background: url(../images/linkbtm_02.svg) 90% 50% no-repeat; }
+.link_inner>a:nth-of-type(3){background: url(../images/linkbtm_03.svg) 90% 50% no-repeat; }
+.link_inner>a:nth-of-type(4){background: url(../images/linkbtm_04.svg) 90% 50% no-repeat; }
+
+
+/* media quary */
+/* tablet     ~ 1024 */
+@media screen and (max-width: 1024px){
+.link a{padding: 20px; height: 80px; font-size: 1rem;line-height: 80px;} 
+}
+  
+/*mobile     ~ 768*/
+@media screen and (max-width: 768px){
+.link{margin: 5%;}
+.link a{padding: 20px; height: 80px; font-size: 1rem;line-height: 1.2;} 
+.link_inner>a:nth-of-type(1){background: url(../images/linkbtm_01.svg) 50% 50% no-repeat; }
+.link_inner>a:nth-of-type(2){background: url(../images/linkbtm_02.svg) 50% 50% no-repeat; }
+.link_inner>a:nth-of-type(3){background: url(../images/linkbtm_03.svg) 50% 50% no-repeat; }
+.link_inner>a:nth-of-type(4){background: url(../images/linkbtm_04.svg) 50% 50% no-repeat; }
+}
+
+
+
+

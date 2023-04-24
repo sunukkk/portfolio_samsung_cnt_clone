@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>삼성물산소개 | Contact Us | 고객 문의</title>
+  
+  <link rel="stylesheet" href="css/import.css">
+  <link rel="stylesheet" href="css/sub1.css">
+  <script defer src = "js/main.js"></script>
+  <script defer src="js/sub1.js"></script>
+  
+</head>
+<body>
+<!-- 본문 바로가기 -->
+<div id="skipNavi"><a href="#container">본문으로 바로가기</a></div>
+<!-- //본문 바로가기 -->
+<hr />
+<div id="wrap">
+  <div class="bg"></div>
+  <!-- header -->
+  <div id="header">
+
+  </div>
+  <!-- //header -->
+
+<!-- container --> 
+<div id="container">
+  <!-- spot -->
+  <div class="spot">
+    <!-- spot_inner -->
+    <div class="spot_inner">
+      <span class="path"><em>Home </em> &gt; <em> Contact Us </em></span>
+      <h3>CONTACT US</h3>
+    </div>
+  </div>
+  <!-- content -->
+  <div class="content">
+  <form action="/" method="post">
+    <fieldset>
+      <legend class="blind">문의하기</legend>
+      
+      <div class="Q1">
+        <span>Q1.</span>
+        <h4><strong>무엇</strong>에 관해 문의하고 싶으신가요?</h4>
+        <div class="Q1_content">
+          <input type="radio" id="Q1_option1" name="Q1_option" title="공통 문의 IR/ESG/기타">
+          <label for="Q1_option1"><strong>공통 문의</strong><br /><span>IR/ESG/기타</span>
+          </label>
+          
+          <input type="radio" id="Q1_option2" name="Q1_option" title="부문 문의 건설부문/상사부문/패션부문/리조트부문">
+          <label for="Q1_option2"><strong>부문 문의</strong><br /><span>건설부문/상사부문/패션부문/리조트부문</span>
+          </label>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="Q2">
+        <span>Q2.</span>
+        <h4>원하시는<strong>상세 카테고리</strong>를 선택해주세요.</h4>
+        <h4>각 부문 사이트로 이동합니다.</h4>
+        <div class="Q2_content">
+          <div class="Q2_radio">
+            <input type="radio" id="Q2_option1" name="Q2_option" title="IR">
+            <label for="Q2_option1">
+              <strong>IR</strong>
+            </label>
+
+            <input type="radio" id="Q2_option2" name="Q2_option" title="ESG">
+            <label for="Q2_option2">
+              <strong>ESG</strong>
+            </label>
+            
+            <input type="radio" id="Q2_option3" name="Q2_option" title="기타">
+            <label for="Q2_option3">
+              <strong>기타</strong>  
+            </label>
+          </div>
+          <div class="Q2_newwindow">
+            <a href="#" target="_blank" title="건설부문 홈페이지 새창으로 이동">건설부문</a>
+            <a href="#" target="_blank" title="상사부문 홈페이지 새창으로 이동">상사부문</a>
+            <a href="#" target="_blank" title="패션부문 홈페이지 새창으로 이동">패션부문</a>
+            <a href="#" target="_blank" title="리조트부문 홈페이지 새창으로 이동">리조트부문</a>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="Q3">
+        <span>Q3.</span>
+        <h4>문의하시고자 하는 <strong>내용</strong>을 알려주세요.</h4>
+        <p class="essential"><i>*</i> 필수 항목입니다.</p>
+        <div class="Q3_content">
+          <ul>
+            <li>
+              <dl>
+                <dt><label for="Q3_title">제목<i>*</i></label></dt>
+                <dd><input type="text" id="Q3_title" name="Q3_title" title="제목" placeholder="제목 입력" maxlength = "100" required>
+                <span class="txt_limit"><span>1</span>/100</span></dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt><label for="Q3_con">내용<i>*</i></label></dt>
+                <dd><textarea id="Q3_con" name="Q3_con" title="제목" placeholder="내용 입력" cols="30" rows="10" required> </textarea>
+                <span class="txt_limit"><span>1</span>/1000</span></dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt><label for="Q3_email">이메일 주소<i>*</i></label></dt>
+                <dd><input type="text" id="Q3_email_userID" name="Q3_userID" title="이메일 아이디 입력" placeholder="아이디 입력" maxlength = "20" size="20" required><span>@</span>
+                <input type="text" id="Q3_email" class="Q3_email" name="Q3_emailDomain" title="이메일 아이디 입력" placeholder="도메인 입력" maxlength = "30" size="20" required>
+                
+                  <select name="select" id="email_select" class= "Q3_email_select" onchange="emailselect();">
+                  <option value="선택하세요" selected>선택하세요</option>
+                  <option value="naver.com">naver.com</option>
+                  <option value="hanmail.net">hanmail.net</option>
+                  <option value="gmail.com">gmail.com</option>
+                  <option value="nate.com">nate.com</option>
+                  <option value="daum.net">daum.net</option>
+                  <option value="직접입력">직접입력</option>
+                 </select>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt><label for="Q3_randomkey">자동입력 방지<i>*</i></label></dt>
+                <dd><input type="text" readonly disabled value="abcde" id="Q3_randomkey" title="자동입력방지문자">
+                  <input type="text" title="자동입력방지문자">
+                <button title = "자동입력방지문자 새로고침">새로고침</button></dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>개인정보 활용동의</dt>
+                <dd>
+                  <p>삼성물산은 고객님들의 의견 접수와 관련하여 성실한 답변을 드리기 위해 필요한 최소한의 개인정보를 수집하고 있습니다.</p>
+                  <div class="Q3_guide">
+                    <ul>
+                      <li>수집 항목: 이메일</li>
+                      <li>수집 및 이용목적 : 접수 문의에 대한 답변/안내</li>
+                      <li>보유 및 이용기간 : 고객문의 처리후 1년 보관</li>
+                      <li>※ 문의에 대한 답변을 위해서 필요한 최소한의 개인정보 이므로 동의를 해 주셔야 서비스를 이용하실 수 있습니다</li>
+                    </ul>
+                    
+                  </div>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+              <dt>
+                <p class="Q3_ask">위 사항에 동의하십니까?</p>
+              </dt>
+              <dd><input type="radio" id="agreeY" name="agree" title = "개인정보 활용동의여부(Y)" required>동의</dd>
+              <dd><input type="radio" id="agreeN" name="agree" title = "개인정보 활용동의여부(N)">동의하지 않음</dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr/>
+      <input type="submit" value="문의하기" title="문의 접수하기" >
+    </fieldset>
+  </form>
+  </div>
+</div>
+<!-- //container -->
+
+<!-- footer -->
+<div id="footer">
+ 
+</div>
+
+</body>
+
+</html>
+
+<script>
+  async function fetchHtmlAsText(url) {
+    const response = await fetch(url);
+    console.log(response)
+    return await response.text(); // response의 text를 밑에 넣어준다
+
+  }
+  async function importPage(target) {
+    document.querySelector(`#${target}`).innerHTML = await fetchHtmlAsText(`${target}.html`);
+  }
+  importPage(`header`);
+  importPage(`footer`);
+</script>

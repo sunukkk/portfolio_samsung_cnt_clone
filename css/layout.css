@@ -1,0 +1,28 @@
+@import url(reset.css);
+
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+
+/* layout */
+.mob{display:none}
+#wrap{position:relative;width: 100%;height: 100%;}
+.bg{position:fixed;width: 100%;height: calc(100% - 120px);top: 120px;z-index: -100;opacity:0;visibility: hidden ;transition:all 0.3s ease}
+.bg.on{background: rgba(0,0,0,0.6);z-index: 30;opacity:1; visibility: visible;}
+
+  #header{position:relative; width: 100%; height: 160px; background: #fff;}
+    .header_wrap{z-index: 90;width: 100%;background: #fff;}
+      .gnb{display:block;width: 100%;margin: 0 auto;background: #fff;}
+      .info{width: 100%; margin: 0 auto; border-radius: 0 0 8px 8px;z-index: 100; background: #fff; }
+    .search_wrap{width: 100%;display:block}
+
+  .main_visual{       display:block    ; width: 92%; margin: 0 auto; margin-bottom: 3%;}
+  
+  #container{width: 92%; margin: 0 auto; display:block;}
+    .business{display:block; margin-bottom: 3%;}
+    .activity{display:block; margin-bottom: 3%;}
+    .newsroom{display:block; margin-bottom: 3%;}
+    .network{display:block; margin-bottom: 3%;}
+    .relations{display:block; margin-bottom: 3%;}
+
+  #footer{width: 100%;display:block; background-color: #121212;color: #fff;}
+    .footer_wrap{display:block}
