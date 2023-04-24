@@ -199,7 +199,7 @@ align-items: center;justify-content: center;}
 
 /* network */
 .network_wrap>.network_header{display: flex; justify-content: space-between; align-items: center;margin-bottom: 2%;}
-.network_content{background: url(/images/network_bg.jpg) no-repeat 0 0 ; background-size: cover;border-radius: 8px;padding: 4%; display:flex;justify-content: space-between;padding: 7% 9%;}
+.network_content{background: url(../images/network_bg.jpg) no-repeat 0 0 ; background-size: cover;border-radius: 8px;padding: 4%; display:flex;justify-content: space-between;padding: 7% 9%;}
 
 .network_content>.something{}
 
