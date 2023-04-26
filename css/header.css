@@ -274,8 +274,6 @@
   .mob{display:block;}
 
   /* header */
-
-  /* header */
   #header{height: 112px; background: #fff;}
   .header_wrap{position: fixed;top: 48px;height: 64px;}
 
@@ -351,7 +349,43 @@
   
 }
 
+/* mobile info ? ~ 640 */
+@media screen and (max-width: 640px){
+  html{font-size: 3vw;}
+  body.no-scroll {overflow-y: hidden;}
+  .info_nav_inner{height: 100%;overflow: scroll;}
 
+  .info_content{width: 400px;min-width: 0; flex-direction: column; padding: 40px 0; }
+  
+  .info_content>.info1{width: 100%;height: 160px;padding-bottom: 10%;}
+  .info1 ul>li{height: 160px;}
+  .info1 ul>li>span{font-size: 1rem}
+
+  .info_content>.info2{width: 100%;margin-top: 10%;}
+  .info_content>.info2>.stock_info>p>strong{font-size: 1.5rem;}
+  .info_content>.info2>.stock_info>p>span{font-size: 0.8rem;bottom: -40%;}
+
+  .info_content>.info3{width: 100%;margin-top: 6%;}
+  .info_content>.info3>ul>li{background-size: 2rem;}
+  .info_content>.info3>ul>li:hover{background-size: 2rem;}
+
+  .info_content>.info4{width: 100%;margin-top:10%;}
+  .info_content>.info4>ul{margin-top: 5%;}
+  .info_content>.info4>ul>li{margin-bottom: 10px;height: 60px}
+  .info_content>.info4>ul>li>a{padding: 0;}
+  .info_content>.info4>ul>li:nth-of-type(1)>a{background-position: 48%;}
+  .info_content>.info4>ul>li:nth-of-type(2)>a{background-position: 42%;}
+  .info_content>.info4>ul>li:nth-of-type(3)>a{background-position: 42%;}
+  .info_content>.info4>ul>li:nth-of-type(4)>a{background-position: 42%;}
+  .info_content>.info4>ul>li:nth-of-type(5)>a{background-position: 55%;}
+
+  .info_content>.info4>ul>li.on:nth-of-type(1)>a{background-position: 51%;}
+  .info_content>.info4>ul>li.on:nth-of-type(2)>a{background-position: 45%;}
+  .info_content>.info4>ul>li.on:nth-of-type(3)>a{background-position: 45%;}
+  .info_content>.info4>ul>li.on:nth-of-type(4)>a{background-position: 45%;}
+  .info_content>.info4>ul>li.on:nth-of-type(5)>a{background-position: 58%;}
+
+}
 
 /* font-size */
 
@@ -385,7 +419,7 @@
 .info_wrap.scroll200 .info_btn_open{right: 0%;}
 
 .header_wrap.scroll200 .gnb_wrap{height: 76px;}
-.header_wrap.scroll200 .logo>a{top:66px}
+
 .header_wrap.scroll200 .gnb_nav>ul{height: 76px;}
 .header_wrap.scroll200 .gnb_nav>ul>li>a{line-height: 76px;}
 .header_wrap.scroll200 .gnb_nav>ul>li>div{top: 76px;}
