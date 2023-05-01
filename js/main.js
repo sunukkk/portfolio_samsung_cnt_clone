@@ -152,23 +152,23 @@ const search_inner = document.querySelector('.search_inner')
 let isbtnOn = 0
 
 btn_srch.addEventListener('mouseenter', e =>{
-  e.preventDefault();
+ 
   if(isbtnOn == 0)
-    e.currentTarget.style.background = 'url(../images/ico_search_on.png)'
+    e.currentTarget.style.background = 'url(../images/ico_search_on.png) no-repeat 100% 50%';
   else{
-    e.currentTarget.style.background = 'url(../images/ico_close_on.png)'
+    e.currentTarget.style.background = 'url(../images/ico_close_on.png) no-repeat 100% 50%';
   }
 })
 btn_srch.addEventListener('mouseleave', e =>{
   if(isbtnOn == 0)
-    e.currentTarget.style.background = 'url(../images/ico_search.png)'
+    e.currentTarget.style.background = 'url(../images/ico_search.png) no-repeat 100% 50%';
   else{
-    e.currentTarget.style.background = 'url(../images/ico_close.png)'
+    e.currentTarget.style.background = 'url(../images/ico_close.png) no-repeat 100% 50%';
   }
 })
 
 btn_srch.addEventListener('click', e =>{  
-  e.preventDefault();
+  
   if(isbtnOn == 0){ isbtnOn = 1;
   btn_srch.style.background = 'url(../images/ico_close.png)'}
   
