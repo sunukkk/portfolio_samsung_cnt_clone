@@ -23,6 +23,7 @@ const info_nav = document.querySelector('.info_nav');
 const info_nav_inner = document.querySelector('.info_nav_inner');
 const info_content = document.querySelector('.info_content');
 const info_inner = document.querySelector('.info_inner');
+const logo = document.querySelector('.logo>a')
 
 btn_info_open.addEventListener('click', e =>{
   e.preventDefault();
@@ -93,24 +94,75 @@ gnb_ul_li_ul_li.forEach((li, index) => {
 
 
 
-/* 스크롤 움직임에 따른 header 변화 */
+/* 스크롤 움직임에 따른 header 변화 및 효과 */
+const main_visual = document.querySelector('.main_visual')
+const business = document.querySelector('.business')
+const activity = document.querySelector('.activity')
+const newsroom = document.querySelector('.newsroom')
+const network = document.querySelector('.network')
+const relations = document.querySelector('.relations')
+const footer = document.querySelector('#footer')
+
+main_visual.classList.add('on');
+
 
 let scrollY = window.pageYOffset;
 
 window.addEventListener('scroll', () =>{
+
+
+window.addEventListener('scroll', () => {
+  let scrollTop = window.pageYOffset;
+  let windowHeight = window.innerHeight;
+  let scrollHeight = document.documentElement.scrollHeight - windowHeight;
+
+  let scrollPercentage = (scrollTop / scrollHeight) * 100;
+  console.log(scrollPercentage)
+
+  if (scrollPercentage >= 5) {
+    business.classList.add('on');
+  }
+
+  if (scrollPercentage >= 13) {
+    activity.classList.add('on');
+  }
+
+  if (scrollPercentage >= 52) {
+    newsroom.classList.add('on');
+  }
+
+  if (scrollPercentage >= 75) {
+    network.classList.add('on');
+  }
+
+  if (scrollPercentage >= 90) {
+    relations.classList.add('on');
+  }
+  
+  if (scrollPercentage >= 97) {
+    footer.classList.add('on');
+  }
+});
+
+  
   let nowscrollY = window.pageYOffset;
   
+
+
   /* 스크롤값 200 ~ 400 : 작아짐*/
   if(nowscrollY >= 200 ){
     info_wrap.classList.add('scroll200')
     header_wrap.classList.add('scroll200')
     search_wrap.classList.add('scroll200')
+    logo.classList.add('scroll200')
+
   }
   
   /* 스크롤값 400 이상 : 사라짐 (검색메뉴 또는 gnb 열려있으면 작아진 상태 유지)*/
   if(nowscrollY >= 400 && (!search_inner.classList.contains('on')) && !bg.classList.contains('on')){
     info.classList.add('scroll400')
     header_wrap.classList.add('scroll400')
+
   }
   
   /* 스크롤값 400보다 크고 스크롤을 올렸을 때 : 작아짐 */

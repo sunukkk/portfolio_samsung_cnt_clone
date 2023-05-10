@@ -419,7 +419,7 @@
 .info_wrap.scroll200 .info_btn_open{right: 0%;}
 
 .header_wrap.scroll200 .gnb_wrap{height: 76px;}
-
+.header_wrap.scroll200 .logo>a{top: 68px;}
 .header_wrap.scroll200 .gnb_nav>ul{height: 76px;}
 .header_wrap.scroll200 .gnb_nav>ul>li>a{line-height: 76px;}
 .header_wrap.scroll200 .gnb_nav>ul>li>div{top: 76px;}
@@ -433,3 +433,4 @@
 
 .header_wrap{position: fixed; transition: all 0.3s ease;}
 .header_wrap.scroll400{top: -200px;}
+
