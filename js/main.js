@@ -95,16 +95,13 @@ gnb_ul_li_ul_li.forEach((li, index) => {
 
 
 /* 스크롤 움직임에 따른 header 변화 및 효과 */
-const main_visual = document.querySelector('.main_visual')
+
 const business = document.querySelector('.business')
 const activity = document.querySelector('.activity')
 const newsroom = document.querySelector('.newsroom')
 const network = document.querySelector('.network')
 const relations = document.querySelector('.relations')
 const footer = document.querySelector('#footer')
-
-main_visual.classList.add('on');
-
 
 let scrollY = window.pageYOffset;
 

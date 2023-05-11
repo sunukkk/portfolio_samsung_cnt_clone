@@ -351,6 +351,8 @@
 
 /* mobile info ? ~ 640 */
 @media screen and (max-width: 640px){
+  .header_wrap.scroll200 .logo>a{top: 20px !important}
+
   html{font-size: 3vw;}
   body.no-scroll {overflow-y: hidden;}
   .info_nav_inner{height: 100%;overflow: scroll;}
@@ -431,6 +433,6 @@
 .info{position: fixed; top: 0; transition: all 0.3s ease;}
 .info.scroll400{top: -200px;}
 
-.header_wrap{position: fixed; transition: all 0.3s ease;}
-.header_wrap.scroll400{top: -200px;}
+.header_wrap{position: fixed; top: 0 ;transition: all 0.3s ease;}
+.header_wrap.scroll400{/* transform: translateY(-200px) */ top:-200px}
 
