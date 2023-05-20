@@ -221,10 +221,10 @@ btn_srch.addEventListener('mouseleave', e =>{
 btn_srch.addEventListener('click', e =>{  
   
   if(isbtnOn == 0){ isbtnOn = 1;
-  btn_srch.style.background = 'url(../images/ico_close.png)'}
+  btn_srch.style.background = 'url(images/ico_close.png)'}
   
   else{isbtnOn = 0;
-  btn_srch.style.background = 'url(../images/ico_search.png)'
+  btn_srch.style.background = 'url(images/ico_search.png)'
   }
   
   toggleOn(search_wrap)
