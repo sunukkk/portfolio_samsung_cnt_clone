@@ -419,6 +419,8 @@
 .info_wrap.scroll200 .info_nav>ul{left: 0%;}
 .info_wrap.scroll200 .info_btn_open{right: 0%;}
 
+.header_wrap.scroll200 {border-bottom: 1px solid #e5e5e5;}
+.header_wrap.scroll200 .logo>a{top: 64px;}
 .header_wrap.scroll200 .gnb_wrap{height: 102px;}
 .header_wrap.scroll200 .gnb_nav>ul{height: 76px;}
 .header_wrap.scroll200 .gnb_nav>ul>li>a{line-height: 76px;}
